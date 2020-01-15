@@ -18,7 +18,7 @@ if(isset($_REQUEST['submit'])!=''){
     }
 else
 {
-$sql="insert into students(date, time, id_numbers, name, ip_address, CCode) values(CURDATE(), '$currentDateTime', '".$_REQUEST['id_number']."', '".$_REQUEST['name']."', '$ipaddress', '".$_REQUEST['CCode']."')";
+$sql="insert into students(Date, time, id_numbers, name, ip_address, CCode) values(CURDATE(), CURDATE(), '".$_REQUEST['id_number']."', '".$_REQUEST['name']."', '$ipaddress', '".$_REQUEST['CCode']."')";
 $res=mysqli_query($link , $sql);
 if($res)
 {
@@ -27,7 +27,8 @@ if($res)
 }
 else
 {
-Echo "There is some problem in inserting record";
+echo "There is some problem in inserting record";
+echo "$currentDateTime";
 }
 
 }

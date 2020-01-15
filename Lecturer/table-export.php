@@ -19,7 +19,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from themifycloud.com/demos/templates/joli/table-export.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Feb 2018 15:40:18 GMT -->
 <head>
         <!-- META SECTION -->
         <title>AcaCell Lecturer View</title>

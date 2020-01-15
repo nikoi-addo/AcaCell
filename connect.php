@@ -1,8 +1,8 @@
-<?php 
+<?php
 
 $hostname = "localhost";
 $username = "root";
-$password = "";
+$password = "1200secs";
 $db = "acacell members";
 
 $link = mysqli_connect($hostname , $username , $password , $db);

@@ -1,11 +1,12 @@
 <?php
-include "../connect.php";
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
+// include "../connect.php";
+
+  function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+  }
 
 
 	$course = test_input($_GET['course']);
@@ -19,7 +20,8 @@ function test_input($data) {
 
 
 	$sdata = "../attendance.php?course=" . $course . "" . $addmin;
-	$sdata = test_input($sdata)
+	$sdata = test_input($sdata);
+
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -60,7 +62,7 @@ function test_input($data) {
 				The attendance is availabe for only <?php echo $_GET['timer']; ?> minutes.<a href="<?php echo $sdata; ?>">Here</a></b></center>
 			</div>
 			<center><div>
-				<iframe width=1000px height=1000px src="../phpqrcode/phpqrcode/index.php?data=<?php echo  $sdata; ?>" style="border: none" align="center"></iframe>
+				<iframe width=1000px height=1000px src="../phpqrcode/index.php?data=<?php echo $sdata; ?>" style="border: none" align="center"></iframe>
 			</div></center>
 
 
