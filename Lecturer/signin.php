@@ -2,7 +2,7 @@
 	//Start the Session
 	// include "connect.php";
 	session_start();
-	$conn = mysqli_connect("localhost","root","1200secs","acacell members");
+	$conn = mysqli_connect("localhost","root","","acacell members");
 	// require('connect.php');
 
 	if (isset($_POST['email']) and isset($_POST['password'])){
